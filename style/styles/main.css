@@ -1,0 +1,132 @@
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #FFF;
+}
+
+header {
+  background: #2F2235;
+}
+
+header h1 {
+  font-weight: 300;
+}
+
+header span {
+  color: #34D1D1;
+}
+
+#title-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+  width: 90%;
+}
+
+#challenge-name {
+  position: relative;
+  margin: 3% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  font-weight: 300;
+  font-size: 1.2em
+}
+
+#challenge-name p {
+  width: 15%;
+}
+
+#challenge-name hr {
+  width: 85%
+}
+
+img {
+  width: 25%;
+  height: 40%;
+}
+
+#tab-wrapper {
+  display: flex;
+}
+
+article {
+  border: 1px solid #D1D2D3;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tab-name {
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #FFF;
+  font-size: 1.4em;
+  color: #666666;
+  background: #F2F2F2;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.tabs {
+  display: none;
+  width: 400%;
+  padding-bottom: 30px;
+  background: #FFF;
+}
+
+.tabs h2 {
+  width: 90%;
+  margin: 20px auto;
+  padding-bottom: 10px;
+  font-size: 1.3em;
+  font-weight: 600;
+  border-bottom: 1px solid #D1D2D3;
+}
+
+.tabs p {
+  width: 90%;
+  margin: 0 auto 15px auto;
+  font-size: 0.8em;
+  line-height: 24px;
+}
+
+#tab-2 {
+  margin-left: -100%;
+}
+
+#tab-3 {
+  margin-left: -200%;
+}
+
+#tab-4 {
+  margin-left: -300%;
+}
+
+.show-header {
+  background: #FFF;
+  border-bottom: 1px solid #D1D2D3;
+  font-weight: 600;
+}
+
+
+.show-tab {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 300px;
+  margin: 5% auto 20px;
+  padding: 15px 0;
+  background: #2F2235;
+  color: #FFF;
+  text-align: center;
+  font-weight: 300;
+}
