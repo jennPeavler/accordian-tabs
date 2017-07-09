@@ -54,10 +54,11 @@ img {
 
 #tab-wrapper {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
 
 article {
-  border: 1px solid #D1D2D3;
   width: 90%;
   margin: 0 auto;
 }
@@ -65,7 +66,8 @@ article {
 .tab-name {
   margin: 0;
   padding: 15px;
-  border: 1px solid #FFF;
+  border-bottom: 1px solid #D1D2D3;
+  border-right: 1px solid #FFF;
   font-size: 1.4em;
   color: #666666;
   background: #F2F2F2;
@@ -75,8 +77,8 @@ article {
 
 .tabs {
   display: none;
-  width: 400%;
-  padding-bottom: 30px;
+  width: 391.25%;
+  padding: 8% 0 8% 8%;
   background: #FFF;
 }
 
@@ -110,13 +112,16 @@ article {
 
 .show-header {
   background: #FFF;
-  border-bottom: 1px solid #D1D2D3;
+  border: 1px solid #D1D2D3;
+  border-bottom: none;
   font-weight: 600;
 }
 
 
 .show-tab {
   display: flex;
+  border: 1px solid #D1D2D3;
+  border-top: none;
 }
 
 a {
