@@ -4,6 +4,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background: #FFF;
+  margin-bottom: 30px;
 }
 
 header {
@@ -27,6 +28,8 @@ header span {
   color: #FFF;
   width: 90%;
 }
+
+/*************************ACCORDION TABS***************/
 
 .challenge-name {
   position: relative;
@@ -136,6 +139,8 @@ a {
   font-weight: 300;
 }
 
+/*****************************FLEX CARDS*****************************/
+
 #flex-cards-wrapper {
   width: 90%;
   margin: 30px auto;
@@ -175,7 +180,68 @@ a {
   margin-right: 0.5%;
 }
 
+/************************HEADER BAR**************************/
+
+#header-bar {
+  background: #D1D2D3;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+#header-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+#menu-tab p {
+  display: none;
+}
+
+#nav-tab {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  padding: 0;
+  color: #666666;
+}
+
+#search-wrapper {
+  position: relative;
+}
+
+#search-wrapper input {
+  height: 30px;
+  border: 1px solid #D1D2D3;
+}
+
+#search-wrapper img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+/*******************MEDIA QUEIRIES*****************/
+
 @media (max-width: 630px) {
+  /*******************FLEX CARDS*****************/
   .big-card,
   .small-card {
     width: 90%;
@@ -208,6 +274,7 @@ a {
     width: 25%
   }
 
+/******************ACCORDION TABS************************/
   #tab-wrapper {
     display: flex;
     flex-direction: column;
@@ -245,4 +312,71 @@ a {
   a {
     width: 72%;
   }
+}
+
+
+/**************************HEADER BAR*************************/
+@media (max-width: 990px) {
+  ul {
+    width: 70%;
+  }
+
+  #nav-tab {
+    width: 90%;
+  }
+}
+
+@media (max-width: 840px) {
+ #header-bar {
+   flex-direction: column;
+   height: auto;
+   padding: 0;
+   align-items: center;
+ }
+
+ #menu-tab {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 70px;
+ }
+
+ #menu-tab img {
+   margin-left: 20px;
+   width: 60px;
+   height: 60px;
+ }
+ #menu-tab p {
+   display: inline-block;
+   margin-right: 20px;
+   color: #666666;
+ }
+
+ ul {
+   flex-direction: column;
+ }
+
+ #middle-link {
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+
+ #nav-tab {
+   flex-direction: column;
+   background: #F2F2F2;
+   width: 92%;
+   align-items: flex-start;
+   padding: 4%;
+   display: none;
+ }
+
+ #search-wrapper {
+   width: 100%;
+   margin-top: 10px;
+ }
+
+ #search-wrapper input {
+   width: 98%;
+ }
 }
